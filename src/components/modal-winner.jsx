@@ -2,7 +2,7 @@ import Square from "./ui/square";
 
 const ModalWinner = ({ winner, restartGame }) => {
   return (
-    <div className="flex items-center justify-center gap-6 z-50 p-8">
+    <div className="flex flex-col items-center justify-center gap-6 z-50 p-8">
       <h2 className="text-xl font-bold mb-4">{winner && "WINNER"}</h2>
       {winner && <Square>{winner}</Square>}
       <button
