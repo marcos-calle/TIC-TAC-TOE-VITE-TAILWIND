@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.content-modal {
+  @apply bg-gradient-to-r from-pink-500 to-blue-500;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  @apply bg-black  grid place-items-center min-w-[320px] min-h-screen;
+}
+.modal {
+  @apply fixed z-50 top-0 left-0 w-full  min-h-screen hidden items-center justify-center bg-[rgba(0,0,0,0.75)];
+}
+.modal.is-open {
+  @apply flex;
+}
+.square {
+  @apply w-[100px] h-[100px]  border-2 shadow-lg shadow-pink-500/30 flex items-center justify-center cursor-pointer text-5xl;
+}
+.turn .square {
+  @apply border-none;
+}
